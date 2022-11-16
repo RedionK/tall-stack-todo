@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Task;
 use Livewire\Component;
 
 class AddTask extends Component
@@ -10,7 +11,9 @@ class AddTask extends Component
 
     public function createTask()
     {
-        Task::create($this->input);
+        Task::create(['title' => $this->input]);
+
+        return redirect('/');
     }
 
     public function render()
