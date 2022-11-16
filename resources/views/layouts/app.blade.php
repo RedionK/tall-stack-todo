@@ -17,7 +17,9 @@
         @livewireStyles
     </head>
     <body class="m-40 bg-sky-300 font-sans antialiased">
-        @yield('content')
+        <div class="">
+            @yield('content')
+        </div>
 
         @livewireScripts
     </body>

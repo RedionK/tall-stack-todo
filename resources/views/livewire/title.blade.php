@@ -1,3 +1,3 @@
 <div>
-    My Todos
+    My Tasks
 </div>
