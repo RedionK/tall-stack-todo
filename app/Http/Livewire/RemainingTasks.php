@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class RemainingTasks extends Component
 {   
-    public $tasks = [];
+    public $tasks;
 
     public function completeTask($taskId)
     {

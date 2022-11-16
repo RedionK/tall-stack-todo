@@ -16,8 +16,8 @@
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body class="m-40 bg-sky-300 font-sans antialiased">
-        <div class="">
+    <body class="bg-teal-100 antialiased h-100 w-full flex items-center justify-center">
+        <div class="bg-white rounded shadow p-6 my-20">
             @yield('content')
         </div>
 
