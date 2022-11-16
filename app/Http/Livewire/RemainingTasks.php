@@ -7,10 +7,10 @@ use Livewire\Component;
 
 class RemainingTasks extends Component
 {   
-    public $tasks;
+    public $tasks = [];
 
     public function mount(){
-        $this->tasks = Task::where('completed', false);
+        $this->tasks = Task::where('completed', false)->get();
     }
     public function render()
     {
